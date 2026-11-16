@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <title>the first css practice </title>
+    <!--internal css start here-->
+    
+        <head>
+            <style>
+        h1 {
+            color:blue;
+            text-align: center;
+        }
+        /*unversal sets a defuilt color for everything on the page*/
+        *{
+            color:#333333;
+            
+        }
+        /*grouping selector: applies the same allignment and color for both h1&h2*/
+        h1, h2 {
+            color:blue;
+            text-align: center;
+        } 
+        /*id selector style onlyone unique elementwith id ="special-text" */
+        #special-text {
+            color:red;
+            font-size: 20px;
+
+        }
+        /*class selector (.):style any element that has class :"highlight" */
+        .highlight {
+            background-color: yellow; /*add yellow background behinde the text*/
+            font font-weight: bold;    
+        }
+        </style>
+        </head>
+        <body>
+            <!--main heading styled by the grouping selector-->
+            <h1>wellcome to css practice/h1>
+            <h1>wellcome to css </h1>
+            <p>this is the first simple code</p>
+            <p id="special-text">this paragraph is unique and uses an id selector.</p>
+            <p class ="highlight">this paragraph uses the class selector </p>
+             <span class="highlight">this small text also shares the same class</span>
+        
+            </body>
+           </html>
